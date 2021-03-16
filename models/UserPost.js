@@ -30,8 +30,8 @@ UserPost.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'vote'
+    modelName: 'userpost'
   }
 );
 
-module.exports = Vote;
+module.exports = UserPost;
