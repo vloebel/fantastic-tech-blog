@@ -1,6 +1,6 @@
 {{!-- 
-  DISPLAYS a blog post title, text, who it was created by, 
-    and link (with count) to comments.
+  DISPLAYS a blog post title, text, and the user and time
+  it was created. Used by the home page AND dashboard.
   CALLED BY  
     dashboard.handlebars 
     homepage.handlebars
@@ -9,6 +9,8 @@
 <article class="post">
   <div class="title">
     <a href="/post/{{id}}" class="edit-link">{{title}}</a>
+    {{!-- new --}}
+    <div>{{post_txt}}</div> 
     <p class="meta">
     posted by  {{user.username}} on {{format_date created_at}}</p>
 
