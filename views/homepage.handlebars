@@ -1,3 +1,14 @@
+{{!-- 
+  DISPLAYS each blog post
+  CALLED BY
+    controllers/home-routes.js
+    res.render('homepage', {
+        posts,
+        loggedIn: req.session.loggedIn
+      }); 
+  CALLS
+    post-info.post 
+  --}}
 <ol class="post-list">
   {{#each posts as |post|}}
   <li>
