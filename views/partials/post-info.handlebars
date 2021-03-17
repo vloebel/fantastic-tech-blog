@@ -9,14 +9,8 @@
 <article class="post">
   <div class="title">
     <a href="/post/{{id}}" class="edit-link">{{title}}</a>
-  </div>
-  {{!-- NOTE: Showing the post and number of comments
-    is not in the spec - just title and date (I threw in user)
-    <div class="text">
-    {{post_txt}} 
-  </div> --}}
-  <div class="meta">
-    posted by  {{user.username}} on {{format_date created_at}}
-    {{!-- <p><a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a></p> --}}
-  </div>
+    <p class="meta">
+    posted by  {{user.username}} on {{format_date created_at}}</p>
+
+ </div>
 </article>
