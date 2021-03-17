@@ -122,6 +122,10 @@ main {
   line-height: 150%;
 }
 
+.post .title {
+  font-weight: bold;
+}
+
 .post .title span {
   font-style: italic;
   font-size: 90%;
@@ -155,7 +159,7 @@ main {
 .post .meta {
   font-size: 90%;
   margin-bottom: .5%;
-  opacity: .6;
+  opacity: .9;
 }
 
 .new-post-form input {
