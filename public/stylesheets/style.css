@@ -177,10 +177,10 @@ main {
   /* min-height:300px; */
 }
 /* override to make bigger post input box */
-#post-text {
+/* .post-textarea {
   width: 300px;
   min-height:200px;
-}
+} */
 
 .post-display {
   width: 400px;
