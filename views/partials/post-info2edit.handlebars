@@ -1,0 +1,19 @@
+{{!-- 
+  DISPLAYS a blog post title, text, and the user and time
+  it was created. Used dashboard - links to edit page when
+  clicked.
+  CALLED BY  
+    dashboard.handlebars 
+    --}}
+<article class="post">
+  <div class="title">
+    {{!-- <a href="/post/{{id}}" class="edit-link">{{title}}</a> --}}
+    {{!-- new --}}
+    <a href="/dashboard/edit/{{id}}" class="edit-link">{{title}}</a>
+    {{!-- also make the blog post text clickable --}}
+    <div class="post-display"><a href="/dashboard/edit/{{id}}"> {{post_txt}} </a></div>
+    <p class="meta">
+    posted by  {{user.username}} on {{format_date created_at}}</p>
+
+ </div>
+</article>
