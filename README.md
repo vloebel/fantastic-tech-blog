@@ -5,7 +5,7 @@
 ## UA Web Coding Bootcamp - Week 14
 
 ## Description  
-This project implements a Content Management System (CMS) - style blog where deveopers can publish blog posts and comment on posts made by other developers. The app follows a Model-View-Controller (MVC) paradigm using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.   
+This project implements a Content Management System (CMS) - style blog where developers can publish blog posts and comment on posts made by other developers. The app follows a Model-View-Controller (MVC) paradigm using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.   
 
 ### Link to Application
 This application is deployed on Heroku. LINK TBD
