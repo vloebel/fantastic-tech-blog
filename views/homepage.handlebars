@@ -1,6 +1,20 @@
+{{!-- 
+  DISPLAYS each blog post
+  CALLED BY
+    controllers/home-routes.js
+    res.render('homepage', {
+        posts,
+        loggedIn: req.session.loggedIn
+      }); 
+  CALLS
+    post-info.post 
+  --}}
 <ol class="post-list">
   {{#each posts as |post|}}
   <li>
+    {{!-- vll: POSSIBLY change this to a different partial that doesn't
+    insert the WHOLE blog onto the home page. But the spec kind of implies that
+    we are supposed to. Could have something like the first 10 words ...? --}}
     {{> post-info post }}
   </li>
   {{/each}}

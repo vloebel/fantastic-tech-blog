@@ -2,105 +2,55 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    title: 'Heres a stay.',
-    post_txt: 'that shakes the rotten carcass of old death out of its rags',
+    title: 'Post 1 from User 10.',
+    post_txt: 'Post 1 from User 10.Post 1 from User 10.Post 1 from User 10.Post 1 from User 10.Post 1 from User 10.Post 1 from User 10.Post 1 from User 10.Post 1 from User 10.',
     user_id: 10
   },
   {
-    title: 'Heres a large mouth indeed.',
-    post_txt: 'That spits forth rocks and mountains, death and fire.',
+    title: 'Post 2 from User 8.',
+    post_txt: 'Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.Post 2 from User 8.',
     user_id: 8
   },
   {
-    title: 'Talks as familiarly of roaring lions.',
-    post_txt: 'as maids of thirteen do of puppy dogs',
+    title: 'Post 3 from User 1.',
+    post_txt: 'Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.Post 3 from User 1.',
     user_id: 1
   },
   {
-    title: 'What cannoneer begat this lusty youth.',
-    post_txt: 'he speaks plain cannonfire and smoke and bounce',
+    title: 'Post 4 from user 4.',
+    post_txt: 'Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.Post 4 from user 4.',
     user_id: 4
   },
   {
-    title: 'He sounds the bastionado.',
-    post_txt: 'with his tongue',
+    title: 'Post 5 from user 7.',
+    post_txt: 'Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7Post 5 from user 7',
     user_id: 7
   },
   {
-    title: 'Not a word of his but.',
-    post_txt: 'buffets better than the FIST of France',
+    title: 'Post 6 from user 4',
+    post_txt: 'Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4Post 6 from user 4',
     user_id: 4
   },
   {
-    title: 'Zwounds!',
-    post_txt: 'I was never so bethumped with words',
+    title: 'Post 7 from user 1',
+    post_txt: 'Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1Post 7 from user 1',
     user_id: 1
   },
   {
-    title: 'Sincd first.',
-    post_txt: 'I called my brothers father Dad.',
+    title: 'Post 8 from user 1.',
+    post_txt: 'Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user Post 8 from user .',
     user_id: 1
   },
   {
-    title: 'Duis ac nibh.',
-    post_txt: 'Duis ac nibhDuis ac nibhDuis ac nibh',
+    title: 'Post 9 from user 9.',
+    post_txt: 'Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9Post 9 from user 9',
     user_id: 9
   },
   {
-    title: 'Curabitur at ipsum ac tellus semper interdum.',
-    post_txt: 'Duis ac nibhDuis ac nibhDuis ac nibhDuis ac nibhDuis ac nibhDuis ac nibh',
+    title: 'Post 10 from user 5.',
+    post_txt: 'Post 10 from user 5.Post 10 from user 5.Post 10 from user 5.Post 10 from user 5.Post 10 from user 5.Post 10 from user 5.Post 10 from user 5.',
     user_id: 5
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    post_txt: 'Duis ac nibhDuis ac nibhDuis ac nibhDuis ac nibhDuis ac nibh',
-    user_id: 3
-  },
-  {
-    title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    post_txt: 'Dulcet and decorum est per patria morii',
-    user_id: 10
-  },
-  {
-    title: 'Donec dapibus.',
-    post_txt: 'Donec! Dont eat the dapibus!',
-    user_id: 8
-  },
-  {
-    title: 'Nulla tellus.',
-    post_txt: 'Tellus nothing, Nulla',
-    user_id: 3
-  },
-  {
-    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    post_txt: 'some post text: gmpg.org/lorem.jpg',
-    user_id: 3
-  },
-  {
-    title:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.',
-    post_txt: 'some post text: paginegialle.it/mattis/egestas.jsp',
-    user_id: 7
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    post_txt: 'some post text: wikia.com/turpis/eget.jpg',
-    user_id: 6
-  },
-  {
-    title: 'Etiam justo.',
-    post_txt: 'some post text: shareasale.com/quis.json',
-    user_id: 4
-  },
-  {
-    title: 'Nulla ut erat id mauris vulputate elementum.',
-    post_txt: 'some post text: java.com/diam/neque/vestibulum/eget/vulputate/ut/ultrices.png',
-    user_id: 6
-  },
-  {
-    title: 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
-    post_txt: 'some post text: java.com/at/nibh/in.png',
-    user_id: 7
+  
   }
 ];
 

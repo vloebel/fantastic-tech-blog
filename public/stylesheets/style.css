@@ -10,6 +10,7 @@ body, html {
   color: #333;
 }
 
+/* Link styles */
 a {
   text-decoration: none;
   color: #225ca3;
@@ -21,6 +22,7 @@ a:hover {
   color: #3486eb;
 }
 
+/* Regular button styles */
 button {
   background-color: #225ca3;
   border: 0;
@@ -47,11 +49,12 @@ textarea, input {
   border: 1px solid #ccc;
 }
 
+/* puts a blue box around text area when clicked */
 textarea:focus, input:focus {
   outline: none;
   border: 1px solid #3486eb;
 }
-
+/* the comment text area on a post */
 textarea {
   min-width: 40%;
   min-height: 100px;
@@ -73,7 +76,7 @@ form label {
   display: flex;
   flex-direction: column;
 }
-
+/* main.handlebars - blog title and nav */
 header {
   border-bottom: 1px solid #ccc;
   display: flex;
@@ -86,11 +89,12 @@ header h1 {
   font-size: 1em;
 }
 
+/* main.handlebars - body */
 main {
   flex: 1;
   padding: 2% 4%;
 }
-
+/* logout "button" on nav*/
 .btn-no-style {
   background: none;
   border: none;
@@ -122,11 +126,17 @@ main {
   line-height: 150%;
 }
 
-.post .title span {
+.post .title {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* .post .title span {
   font-style: italic;
   font-size: 90%;
   color: #7d7d7d;
-}
+} */
 
 .edit-link {
   display: block;
@@ -152,8 +162,28 @@ main {
   opacity: .6;
 }
 
+
+.post .meta {
+  font-size: 90%;
+  /* margin-bottom: .5%; */
+  margin: 0;
+  padding: 0;  
+  opacity: .8;
+}
+
+/* determines new post title and content input  */
 .new-post-form input {
   width: 300px;
+  /* min-height:300px; */
+}
+/* override to make bigger post input box */
+/* .post-textarea {
+  width: 300px;
+  min-height:200px;
+} */
+
+.post-display {
+  width: 400px;
 }
 
 .edit-post-form {
