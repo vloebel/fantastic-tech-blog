@@ -4,8 +4,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 require('dotenv').config();
 const SESS_SECRET = process.env.SESS_SECRET;
-const SESS_TMEOUT = process.env.SESS_TMEOUT
-;
+const SESS_TMEOUT = parseInt(process.env.SESS_TMEOUT);
 
 const app = express();
 const PORT = process.env.PORT || 3002;
@@ -24,10 +23,6 @@ const sess = {
     db: sequelize
   })
 };
-console.log(`secret: ${SESS_SECRET}`);
-console.log(`timeout: ${SESS_TMEOUT}`);
-
-
 app.use(session(sess));
 
 const helpers = require('./utils/helpers');
