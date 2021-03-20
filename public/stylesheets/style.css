@@ -215,12 +215,3 @@ footer {
   padding: 1%;
   font-size: 110%;
 }
-#tagline {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* @media only screen and (max-width: 900px) {
-#tagline {
-  display: none;
-}
-} */
