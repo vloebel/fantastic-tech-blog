@@ -2,9 +2,10 @@
 --link-color: #225ca3;
 --hover-color:#3486eb;
 --bg-color:#ccc;
---highlight-color: #ffc82f;
+/* --highlight-color: #f8d165; */
+--highlight-color: #a4e77e;
 --main-bg-color:#ffffff;
---alt-bg-color: #fdf2d3;
+--alt-bg-color: #dffdd3;
 --warning-color: #d41414;
 --warning-hover-color: #ff643d;
 --basic-white: white;
@@ -22,9 +23,6 @@ body, html {
   font-family: sans-serif;
   color: var(--dark-gray);
 }
-/* main {
-  margin: 10px;
-} */
 
 /* Link styles */
 a {
@@ -120,6 +118,23 @@ main {
   background-color:var(--alt-bg-color);
 }
 
+.post {
+  width: 100%;
+  margin-bottom: 2%;
+  line-height: 150%;
+  border: 5px solid var(--highlight-color);
+  ;
+}
+
+.post-heading {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  background-color: var(--highlight-color);
+}
+.post-body {
+  width: 90%;
+}
 /* logout "button" on nav*/
 .btn-no-style {
   background: none;
@@ -146,32 +161,6 @@ main {
 
 .delete-post-btn:hover {
   background-color: var(--warning-hover-color);
-}
-
-.post {
-  margin-bottom: 2%;
-  line-height: 150%;
-}
-
-.post .title {
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-.post-display {
-  width: 90%;
-}
-
-
-/* .post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
-} */
-
-.edit-link {
-  display: block;
-  margin: -1.5% 0 2% 0;
 }
 
 .comment-form {

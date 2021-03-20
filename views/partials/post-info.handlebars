@@ -6,12 +6,14 @@
     single-post.handlebars
     --}}
 <article class="post">
-  <div class="title">
-    <a href="/post/{{id}}" class="edit-link">{{title}}</a>
-    {{!-- new --}}
-    <div class="post-display">{{post_txt}}</div> 
-    <p class="meta">
-    posted by  {{user.username}} on {{format_date created_at}}</p>
-
- </div>
+  <div class="post-heading">
+    <span>
+        <a href="/post/{{id}}" class="edit-link">{{title}}</a>
+    </span>
+    <span class="meta">
+    posted by  {{user.username}} on {{format_date created_at}}</span>
+  </div>
+  <div class="post-display">
+    {{post_txt}}
+  </div> 
 </article>
