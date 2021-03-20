@@ -21,5 +21,5 @@ async function newFormHandler(event) {
     alert(response.statusText);
   }
 }
-
+// Submit a post and then return to dashboard
 document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);

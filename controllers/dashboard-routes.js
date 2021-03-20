@@ -42,6 +42,7 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
+// edit an individual post
 router.get('/edit/:id', withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
@@ -80,6 +81,13 @@ router.get('/edit/:id', withAuth, (req, res) => {
     .catch(err => {
       res.status(500).json(err);
     });
+});
+
+// add a new post (no parameters)
+router.get('/add-post/', withAuth, (req, res) => {
+  res.render('add-post', {
+    loggedIn: true
+  });
 });
 
 module.exports = router;
