@@ -2,13 +2,13 @@
 --link-color: #225ca3;
 --hover-color:#3486eb;
 --bg-color:#ccc;
---alt-bg-color: #fff5eb;
+--highlight-color: #ffc82f;
+--main-bg-color:#ffffff;
+--alt-bg-color: #fdf2d3;
 --warning-color: #d41414;
 --warning-hover-color: #ff643d;
 --basic-white: white;
 --dark-gray: #333;
-
-
 }
 
 * {
@@ -22,6 +22,9 @@ body, html {
   font-family: sans-serif;
   color: var(--dark-gray);
 }
+/* main {
+  margin: 10px;
+} */
 
 /* Link styles */
 a {
@@ -51,9 +54,8 @@ button:hover {
   background-color: var(--hover-color);
 }
 
-.post-list {
-  margin: 0;
-  padding: 0;
+.post-list li {
+  list-style-type:none;
 }
 
 textarea, input {
@@ -82,31 +84,42 @@ form label {
 }
 
 .wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-/* main.handlebars - blog title and nav */
-header {
-  border-bottom: 1px solid var(--bg-color);
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.wrapper header{
+  width: 100%;
+  height: 100%;
   padding: 0 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--highlight-color);
+  border-bottom: 1px solid var(--bg-color);
 }
 
 header h1 {
   font-size: 2em;
+  padding-left:25px;
+}
+
+nav {
+  display:flex;
+  padding-top:10px;
+  gap:25px;
 }
 
 /* main.handlebars - body */
 main {
-  flex: 1;
+  /* flex: 1; */
   padding: 2% 4%;
+  background-color:var(--alt-bg-color);
 }
+
 /* logout "button" on nav*/
 .btn-no-style {
   background: none;
@@ -145,6 +158,10 @@ main {
   margin: 0;
   padding: 0;
 }
+.post-display {
+  width: 90%;
+}
+
 
 /* .post .title span {
   font-style: italic;
@@ -196,9 +213,6 @@ main {
   min-height:200px;
 } */
 
-.post-display {
-  width: 400px;
-}
 
 .edit-post-form {
   margin-bottom: 5%;
@@ -206,8 +220,17 @@ main {
 
 footer {
   border-top: 1px solid #ccc;
+  /* background-color: var(--highlight-color); */
   display: flex;
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+#tagline {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (max-width: 900px) {
+#tagline {
+  display: none;
 }

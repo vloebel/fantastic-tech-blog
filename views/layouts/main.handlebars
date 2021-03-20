@@ -4,27 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Blog</title>
+  <title>Tech Talk</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Fantastic Tech Blog</a>
-      </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        {{!-- if not logged in, they can click dashboard, but it
-        takes them to the login page --}}
-        <a href="/dashboard">dashboard &nbsp; &nbsp; &nbsp;</a>
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
+    <header >
+      <div>
+        <nav>
+        <a href="/">Home</a>
+        <a href="dashboard">Dashboard</a>
+          {{#if loggedIn}}
+            <button id="logout" class="btn-no-style">Logout</button>
+          {{else}}
+          {{!-- if not logged in, they can click dashboard, but it
+          takes them to the login page --}}
+          <a href="/login">Login</a>
+          {{/if}}
+        </nav>
+      </di>
+      <div>
+        <h1>
+          <a href="/">Tech Talk</a>
+        </h1>
+      </div>
     </header>
     <main>
       {{{ body }}}
