@@ -2,8 +2,8 @@
 --link-color: #225ca3;
 --hover-color:#3486eb;
 --bg-color:#ccc;
+/* --highlight-color: #a4e77e; */
 --highlight-color: #a4e77e;
-/* --highlight-color: #657a2a; */
 --main-bg-color:#ffffff;
 --alt-bg-color: #dffdd3;
 --warning-color: #d41414;
@@ -34,9 +34,6 @@ a {
 
 a:hover {
   color: var(--hover-color);
-}
-#clickable-post {
-  color: var(--dark-gray);
 }
 
 /* Regular button styles */
