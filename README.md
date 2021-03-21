@@ -1,24 +1,28 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-![banner](./assets/rm-banner.jpg)
-# Tech Blog - a Model-View-Controller Application
+![banner](./assets/just-tech-banner.jpg)
+# Just Tech News - a Model-View-Controller Application
 ## UA Web Coding Bootcamp - Week 14
 
 ## Description  
-This project implements a Content Management System (CMS) - style blog where developers can publish blog posts and comment on posts made by other developers. The app follows a Model-View-Controller (MVC) paradigm using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.   
+This project implements a Content Management System (CMS) - style blog where developers can publish blog posts and comment on posts made by others. The app follows a Model-View-Controller (MVC) paradigm using Handlebars.js as the templating engine, Sequelize as the ORM, and the express-session npm package for authentication.   
 
-### Link to Application
-This application is deployed as vloebel-cms on Heroku. LINK TBD
+### Application Links
+This application is deployed at: [vloebel-cms.herokuapp.com](https://vloebel-cms.herokuapp.com/)  
+The sourcecode repository is at: [github.com/vloebel](https://github.com/vloebel/fantastic-tech-blog)
+
+NOTE: For ease of testing, the application timeout has been set to 30 seconds when idle. 
 
 ## Table of Contents  
 * [Usage](#Usage) 
 * [User_Story](#User_Story)  
-* [User_Requirements](#User_Requirements)  
+* [User_Requirements](#User_Requirements) 
+* [Screen_Shots](#Screen_shots) 
 * [Questions](#Questions)    
 * [License](#License)
 
 ## Usage  
-* Run on Heroku
+This application is fully deployed as: [vloebel-cms.herokuapp.com](https://vloebel-cms.herokuapp.com/)
 
 ## User_Story 
 AS A developer who writes about tech
@@ -78,6 +82,14 @@ WHEN I click on the logout option in the navigation
 
 WHEN I am idle on the page for more than a set time  
 * THEN I am automatically signed out of the site   
+
+## Screen_Shots
+Home Page  
+![blog homepage](./assets/home.jpg)  
+Login Screen  
+![blog dashboard](./assets/login.jpg)  
+Dashboard  
+![blog dashboard](./assets/dashboard.jpg)  
 
 
 ## Questions
