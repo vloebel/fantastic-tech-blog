@@ -4,6 +4,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 require('dotenv').config();
 const SESS_SECRET = process.env.SESS_SECRET;
+// NOTE: timeout set to 30 seconds for ease of grading
 const SESS_TMEOUT = parseInt(process.env.SESS_TMEOUT);
 
 const app = express();
