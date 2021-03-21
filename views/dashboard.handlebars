@@ -1,23 +1,22 @@
-<section>
-  <a href="/dashboard/add-post" class="edit-link">CLICK ME</a>
-</section>
-
-{{!-- since the edit post function is a link, there was no js event listener button. but we need to add one for creating a post --}}
-
-{{!-- CHANGE STYLE to match home page below --}}
-{{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info2edit post}}
-      
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
+<div>
+  <section>
+    <a href="/dashboard/add-post" class="edit-link">NEW POST</a>
+  </section>
+  
+  {{!-- since the edit post function is a link, there was no js event listener button. but we need to add one for creating a post --}}
+  {{!-- {{#if posts.length}} --}}
+  <section>
+    <h2>Your Posts</h2>
+    <div class="post-list">
+      {{#each posts as |post|}}
+      <div>
+        {{> post-info2edit post}}
+           <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      </div>
+      {{/each}}
+    </div>
+  </section>
+</div>
+{{!-- {{/if}} --}}
 
 {{!-- <script src="/javascript/dashboard.js"></script> --}}
